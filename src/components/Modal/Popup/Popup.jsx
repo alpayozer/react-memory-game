@@ -12,9 +12,9 @@ const Popup = ({ show, setShow, shuffleCards, score }) => {
     <>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Skor:{score}</Modal.Title>
+          <Modal.Title>Score:{score}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Tebrikler oyunu kazandınız</Modal.Body>
+        <Modal.Body>Congratulations you won the game</Modal.Body>
         <Modal.Footer>
           <Button onClick={handleClose}>Close</Button>
           <Button onClick={newGame}>New Game</Button>
